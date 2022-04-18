@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="RtlSymmetry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/angkringan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Angkringan UTS Ceria"
+            android:textColor="@color/purple_200"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="250dp"
+        android:text="@string/tablayout"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingLeft="2dp"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="248dp"
+        android:textSize="20sp"
+        android:paddingLeft="2dp"
+        android:src="@drawable/camera" />
+
+    <ImageView
+        android:id="@+id/imageCamera"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="70dp" />
+
+    <Button
+        android:id="@+id/buttonCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageCamera"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#ffffff"
+        android:text="Open Camera"
+        android:textColor="@color/purple_200"
+        android:textStyle="bold"
+        tools:ignore="UnknownId" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alert" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/listview" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menghitung" />
+        </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_below="@+id/linear1"
+        android:layout_width="550dp"
+        android:layout_height="600dp"/>
+
+</RelativeLayout>

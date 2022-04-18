@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">UTS_DwiFadillah</string>
+    <string name="alert">Incoming Order</string>
+    <string name="listview">Daftar Menu</string>
+    <string name="menghitung">Menghitung</string>
+    <string name="tablayout">Dashboard</string>
+    <string name="materi_alert">Menu Pesanan Masuk :</string>
+    <string name="alert_1">Food</string>
+    <string name="alert_2">Drink</string>
+    <string name="alert_3">Snack</string>
+    <string name="toast">Toast</string>
+    <string name="durasi">Durasi</string>
+    <string name="ketik_teks">Ketik Teks :</string>
+    <string name="jumlah_huruf_vokal">Menghitung huruf vokal </string>
+    <string name="_0">0</string>
+    <string name="hitung">Hitung</string>
+</resources>

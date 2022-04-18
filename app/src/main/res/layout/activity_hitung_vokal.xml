@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_hitung_vokal">
+
+    <TextView
+        android:id="@+id/ketik_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ketik_teks"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ketik_title"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill,LabelFor" />
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/editText"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/jumlah_huruf_vokal"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/text_jumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="0"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:text="@string/hitung"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+</RelativeLayout>
